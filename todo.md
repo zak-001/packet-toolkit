@@ -7,8 +7,14 @@
 
 ## Tasks:
 ### Week 1:
-- [ ] Get the development environment ready.
+- [x] Get the development environment ready.
+	- [x] Github repo
+	- [x] python3 and requirements
 
+- [ ] Do tools research
+	- [ ] Understand Scapy’s packet manipulation model.
+		- [ ] Read documentation
+		- [ ] Get comfy with it (tuto,..)
+	- [ ] Get familiar with Click
+	- [ ] Get familiar with Rich
 - [ ] Build basic packet crafting, sending, and sniffing functionality.
-
-- [ ] Understand Scapy’s packet manipulation model.
