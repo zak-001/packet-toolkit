@@ -11,10 +11,47 @@
 	- [x] Github repo
 	- [x] python3 and requirements
 
-- [ ] Do tools research
-	- [ ] Understand Scapy’s packet manipulation model.
-		- [ ] Read documentation
-		- [ ] Get comfy with it (tuto,..)
-	- [ ] Get familiar with Click
-	- [ ] Get familiar with Rich
-- [ ] Build basic packet crafting, sending, and sniffing functionality.
+- [x] Learn scapy
+
+- [x] Establish structure
+
+- [ ] Implement core recon tools
+	- [x] arp_scan.py
+	- [x] ping_sweep.py
+	- [x] tcp_syn_scan.py
+	- [x] tcp_connect_scan.py
+	- [x] udp_scan.py
+	- [ ] os_fingerprint.py
+	- [ ] traceroute.py
+- [ ] Tests
+### Week 2:
+- [ ] Attack Implementation
+	- [ ] syn_flood.py
+	- [ ] icmp_flood.py
+	- [ ] land.py
+	- [ ] smurf.py
+	- [ ] fraggle.py
+	- [ ] tcp_reset.py
+	- [ ] arp_poisoning.py
+	- [ ] dns_spoof.py
+- [ ] Tests
+- [ ] Evasion techniques
+	- [ ] fragmentation.py
+	- [ ] ttl_manipulation.py
+	- [ ] checksum_evasion.py
+	- [ ] timing_delay.py
+	- [ ] decoy_scan.py
+	- [ ] tcp_flags.py
+- [ ] Tests
+### Week 3:
+- [ ] Build CLI structure with Click, add commands for each recon tool
+- [ ] Add attack and evasion subcommands with options
+- [ ] Rich Logging & Output
+	- [ ] Color-coded statuses (success, info, error)
+	- [ ] Progress bars or live panels if useful
+	- [ ] Output tables or trees for results
+- [ ] Final tests
+###Extra
+- [ ] Add threads
+- [ ] Add nmap
+- [ ] Add phone detection
