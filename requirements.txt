@@ -1,6 +1,8 @@
 click==8.2.1
 markdown-it-py==3.0.0
 mdurl==0.1.2
+netifaces==0.11.0
+-e git+ssh://git@github.com/zak-001/packet-toolkit.git@827eded406e28db9ba7837ea7546c0703cde1a8f#egg=packinjection
 Pygments==2.19.2
 rich==14.1.0
 scapy==2.6.1

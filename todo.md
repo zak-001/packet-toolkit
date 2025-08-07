@@ -15,15 +15,15 @@
 
 - [x] Establish structure
 
-- [ ] Implement core recon tools
+- [x] Implement core recon tools
 	- [x] arp_scan.py
 	- [x] ping_sweep.py
 	- [x] tcp_syn_scan.py
 	- [x] tcp_connect_scan.py
 	- [x] udp_scan.py
-	- [ ] os_fingerprint.py
-	- [ ] traceroute.py
-- [ ] Tests
+	- [x] os_fingerprint.py
+	- [x] traceroute.py
+- [x] Tests
 ### Week 2:
 - [ ] Attack Implementation
 	- [ ] syn_flood.py
