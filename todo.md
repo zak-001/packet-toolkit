@@ -26,13 +26,13 @@
 - [x] Tests
 ### Week 2:
 - [ ] Attack Implementation
-	- [ ] syn_flood.py
-	- [ ] icmp_flood.py
-	- [ ] land.py
-	- [ ] smurf.py
-	- [ ] fraggle.py
+	- [x] syn_flood.py
+	- [x] icmp_flood.py
+	- [x] land.py
+	- [x] smurf.py
+	- [x] fraggle.py
 	- [ ] tcp_reset.py
-	- [ ] arp_poisoning.py
+	- [x] arp_poisoning.py
 	- [ ] dns_spoof.py
 - [ ] Tests
 - [ ] Evasion techniques
@@ -51,6 +51,7 @@
 	- [ ] Progress bars or live panels if useful
 	- [ ] Output tables or trees for results
 - [ ] Final tests
+- [ ] correct requirements
 ###Extra
 - [ ] Add threads
 - [ ] Add nmap
