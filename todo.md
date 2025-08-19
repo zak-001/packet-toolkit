@@ -25,16 +25,16 @@
 	- [x] traceroute.py
 - [x] Tests
 ### Week 2:
-- [ ] Attack Implementation
+- [x] Attack Implementation
 	- [x] syn_flood.py
 	- [x] icmp_flood.py
 	- [x] land.py
 	- [x] smurf.py
 	- [x] fraggle.py
-	- [ ] tcp_reset.py
+	- [x] tcp_reset.py
 	- [x] arp_poisoning.py
-	- [ ] dns_spoof.py
-- [ ] Tests
+	- [x] dns_spoof.py
+- [x] Tests
 - [ ] Evasion techniques
 	- [ ] fragmentation.py
 	- [ ] ttl_manipulation.py
@@ -50,9 +50,12 @@
 	- [ ] Color-coded statuses (success, info, error)
 	- [ ] Progress bars or live panels if useful
 	- [ ] Output tables or trees for results
+- [ ] Refactoring
 - [ ] Final tests
 - [ ] correct requirements
 ###Extra
 - [ ] Add threads
 - [ ] Add nmap
 - [ ] Add phone detection
+###Note
+arp poison detected in wireshark and others (dup detected)

