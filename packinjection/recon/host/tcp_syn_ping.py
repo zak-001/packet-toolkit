@@ -30,4 +30,5 @@ def tcp_syn_scan(hosts):
     ans.summary(lambda s,r: f"s.haslayer(TCP): {s.haslayer(TCP)}; r.haslayer(TCP):{r.haslayer(TCP)}")
 #add if syn/ack send rst
 '''
-tcp_syn_scan("scanme.nmap.org")
+if __name__ == '__main__' :
+	tcp_syn_scan("scanme.nmap.org")

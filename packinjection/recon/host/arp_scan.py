@@ -21,11 +21,7 @@ def scan(network="192.168.1.0/24", interface=None, timeout=3, result=None, verbo
 
 	return hosts
 
-#print(conf.route, conf.iface)
-#a=scan("192.168.56.0/24")
-#print(a)
-#arping("192.168.56.0/24")
-'''
+''' may work with phones since targeted
 ip="192.168.0."
 answers = []
 for i in range(130,150):
@@ -35,3 +31,5 @@ for i in range(130,150):
 for ans in answers:
     ans.summary()
 '''
+if __name__ == '__main__' :
+	scan("192.168.56.0/24") 

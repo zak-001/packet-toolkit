@@ -4,6 +4,7 @@ from scapy.layers.inet import IP, ICMP
 from scapy.sendrecv import sr
 import logging
 
+
 def ping_sweep(ip_range):
     if '-' in ip_range:
         base, iprange = ip_range.rsplit('.',1)
@@ -17,5 +18,7 @@ def ping_sweep(ip_range):
     if not ans:
         print("[-] All hosts are down")
 
-ping_sweep("192.168.56.101")
-#add no hosts found
+if __name__ == '__main__' :
+	ping_sweep("192.168.56.100-110")
+# make a global ip parser for - notation
+

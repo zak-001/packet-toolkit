@@ -8,4 +8,5 @@ def udp_scan(hosts):
     print(f"{ans[IP].src} is UP")
     #ans.summary(lambda s,r : r.sprintf("%IP.src% is UP"))
 
-udp_scan("scanme.nmap.org")
+if __name__ == '__main__' :
+	udp_scan("scanme.nmap.org")
